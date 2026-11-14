@@ -1,0 +1,76 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Control-X for DSPPA AM8328",
+        "description": "Enter the IP address of the amplifier. It must be on the same network as Home Assistant.",
+        "data": {
+          "host": "Amplifier IP address",
+          "port": "Control port",
+          "name": "Name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not open the control socket. Another program on this host may be holding UDP port 40189.",
+      "no_response": "The amplifier did not reply. Check the IP address and that it is powered on."
+    },
+    "abort": {
+      "already_configured": "This amplifier is already configured."
+    }
+  },
+  "entity": {
+    "number": {
+      "treble": {
+        "name": "Treble"
+      },
+      "bass": {
+        "name": "Bass"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zone players",
+        "description": "Link each zone to its DLNA renderer and, if it has one, its AirPlay player. Media played to a zone then goes to its own renderer, so every room can play something different.\n\nZones sharing a renderer are grouped automatically. Removing one from the group moves it to the source below, so it stops hearing the shared audio; joining it again puts it back.\n\nWith **wake the zone automatically** on, starting playback on either linked player switches that zone on and selects the network input.\n\n**Your zones:**\n{zone_names}",
+        "data": {
+          "auto_activate": "Wake the zone automatically when its player starts",
+          "zone_1": "Zone 1 — DLNA renderer",
+          "airplay_1": "Zone 1 — AirPlay player",
+          "zone_2": "Zone 2 — DLNA renderer",
+          "airplay_2": "Zone 2 — AirPlay player",
+          "zone_3": "Zone 3 — DLNA renderer",
+          "airplay_3": "Zone 3 — AirPlay player",
+          "zone_4": "Zone 4 — DLNA renderer",
+          "airplay_4": "Zone 4 — AirPlay player",
+          "zone_5": "Zone 5 — DLNA renderer",
+          "airplay_5": "Zone 5 — AirPlay player",
+          "zone_6": "Zone 6 — DLNA renderer",
+          "airplay_6": "Zone 6 — AirPlay player",
+          "zone_7": "Zone 7 — DLNA renderer",
+          "airplay_7": "Zone 7 — AirPlay player",
+          "zone_8": "Zone 8 — DLNA renderer",
+          "airplay_8": "Zone 8 — AirPlay player",
+          "zone_9": "Zone 9 — DLNA renderer",
+          "airplay_9": "Zone 9 — AirPlay player",
+          "zone_10": "Zone 10 — DLNA renderer",
+          "airplay_10": "Zone 10 — AirPlay player",
+          "zone_11": "Zone 11 — DLNA renderer",
+          "airplay_11": "Zone 11 — AirPlay player",
+          "zone_12": "Zone 12 — DLNA renderer",
+          "airplay_12": "Zone 12 — AirPlay player",
+          "zone_13": "Zone 13 — DLNA renderer",
+          "airplay_13": "Zone 13 — AirPlay player",
+          "zone_14": "Zone 14 — DLNA renderer",
+          "airplay_14": "Zone 14 — AirPlay player",
+          "zone_15": "Zone 15 — DLNA renderer",
+          "airplay_15": "Zone 15 — AirPlay player",
+          "zone_16": "Zone 16 — DLNA renderer",
+          "airplay_16": "Zone 16 — AirPlay player",
+          "leave_source": "Source for a zone that leaves a group"
+        }
+      }
+    }
+  }
+}

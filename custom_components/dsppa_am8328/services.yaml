@@ -1,0 +1,37 @@
+add_station:
+  name: Add radio station
+  description: Add a station to the amplifier's internet radio list.
+  fields:
+    name:
+      name: Station name
+      description: The name shown in the DSPPA app's station list.
+      required: true
+      example: "BBC World Service"
+      selector:
+        text:
+    url:
+      name: Stream URL
+      description: The station's stream URL (http:// recommended).
+      required: true
+      example: "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+      selector:
+        text:
+
+remove_station:
+  name: Remove radio station
+  description: Remove a station from the amplifier's internet radio list.
+  fields:
+    name:
+      name: Station name
+      description: Must match the name exactly as it was added.
+      required: true
+      example: "BBC World Service"
+      selector:
+        text:
+    url:
+      name: Stream URL
+      description: Must match the URL exactly as it was added.
+      required: true
+      example: "http://stream.live.vc.bbcmedia.co.uk/bbc_world_service"
+      selector:
+        text:
